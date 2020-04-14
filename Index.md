@@ -1,0 +1,40 @@
+<!--HTML Code-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Covid-19-Estimator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+  <form method="POST">
+    <p class="form-head">Covid-19-Estimator</p>
+    <input type="number" id="population" name="population" data-population="" placeholder="Enter Population Details"
+      data-population="">
+    <input type="number" id="timeToElapse" name="timeToElapse" data-time-to-elapse=""
+      placeholder="Enter Calculated Time To Elapse">
+    <input type="number" id="reportedCases" name="reportedCases" data-reported-cases=""
+      placeholder="Enter Reported Cases">
+    <input type="number" id="totalHospitalBeds" name="totalHospitalBeds" data-total-hospital-beds=""
+      placeholder="Enter Number of Hospital Beds">
+    <select id="periodType" name="periodType" data-peroid-type="">
+      <option>Select Time Peroid</option>
+      <option value="days">Days</option>
+      <option value="weeks">Weeks</option>
+      <option value="months">Months</option>
+    </select>
+    </br>
+    <a href="#">
+      <div class="button">
+        <input type="button" class="button button-text" data-go-estimate="" onclick="myFunction()"
+          value="Submit Estimate">
+      </div>
+    </a>
+  </form>
+</body>
+
+</html>
